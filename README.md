@@ -23,6 +23,7 @@ Paginated posts, optimistic likes, offline caching and smooth, accessible motion
   <img src="docs/screenshots/feed.png" width="200" alt="Feed" />
   <img src="docs/screenshots/profile.png" width="200" alt="Profile" />
   <img src="docs/screenshots/empty.png" width="200" alt="Empty state" />
+  <img src="docs/screenshots/offline.png" width="200" alt="Offline with cached feed" />
 </p>
 
 ---
@@ -117,40 +118,46 @@ The shared scheme includes launch arguments, turned off by default. Enable them 
 
 ## Architecture
 
-Uma uses **MVVM with a repository layer**, and the code is organised by feature. Data flows in one direction, and every dependency is passed in through an initializer at the composition root (`UmaApp`).
+Uma uses **MVVM (Model–View–ViewModel) with a repository layer**, and the code is organised by feature rather than by file type. Each layer has one job and only talks to the layer directly below it, through a protocol. That keeps the UI independent of where the data comes from, and lets every layer be tested on its own.
 
-```mermaid
-flowchart TD
-    subgraph Presentation
-        V["SwiftUI Views<br/>FeedView · ProfileView · PostDetailView"]
-        VM["FeedViewModel<br/>@Observable"]
-        R["Router<br/>NavigationStack path"]
-    end
-    subgraph Domain
-        REPO_P["FeedRepository protocol"]
-        M["Post · Author · FeedPage · FeedError"]
-    end
-    subgraph Data
-        REPO["DefaultFeedRepository"]
-        SVC["RemoteFeedService"]
-        CACHE["FileFeedCache (actor)"]
-        API["APIClient (URLSession)"]
-    end
-    subgraph Mock Backend
-        PROTO["MockAPIURLProtocol"]
-        SRV["MockAPIServer + posts.json"]
-    end
+### The four layers
 
-    V -->|user intents| VM
-    V -->|push route| R
-    VM --> REPO_P
-    REPO -.implements.-> REPO_P
-    REPO --> SVC
-    REPO --> CACHE
-    SVC --> API
-    API -->|HTTP| PROTO
-    PROTO --> SRV
-```
+**1. Presentation: what the user sees.**
+SwiftUI views (`FeedView`, `PostCardView`, `ProfileView`, `PostDetailView`) only display state and pass user actions, like "like this post" or "load more", to the view model. They contain no business logic and never call the network.
+
+`FeedViewModel` is an `@Observable` class that owns everything the feed screen needs: the list of posts and the current screen state. The state is a single enum: loading, loaded, empty, offline or failed. Because the screen can only be in one of those at a time, it can't show contradictory states, such as a spinner and an error together. The view model also handles pagination, pull-to-refresh and optimistic likes.
+
+`Router` owns the navigation path. When a screen wants to navigate, it pushes a typed `Route` such as `.profile(author)`, and `RootView` decides which screen to show. Screens never create each other, so they stay loosely coupled.
+
+**2. Domain: the app's own language.**
+The plain models (`Post`, `Author`, `FeedPage`), the user-facing `FeedError`, and the `FeedRepository` protocol. This layer has no SwiftUI, no networking and no JSON. It describes *what* the app works with, not *how* data is fetched or stored.
+
+**3. Data: where posts come from.**
+`DefaultFeedRepository` implements `FeedRepository` and is the single source of truth. It asks the network first and saves each loaded page to a local cache. If the first page can't be fetched, it falls back to the cache, so the user still sees the saved feed offline.
+
+Below it, `RemoteFeedService` speaks to the API. It converts raw API responses (DTOs, in snake_case JSON) into domain models, and network errors into domain errors. `APIClient` is a small reusable wrapper around `URLSession` that builds requests, checks status codes and decodes JSON. `FileFeedCache` stores the feed as a JSON file on disk.
+
+**4. Mock backend: a stand-in server.**
+`MockAPIURLProtocol` intercepts the app's HTTP requests, and `MockAPIServer` answers them from a bundled `posts.json`. To the rest of the app, this looks exactly like a real server. See [Mock API](#mock-api).
+
+### How a request flows
+
+Here's what happens when the feed first appears:
+
+1. `FeedView` appears and asks `FeedViewModel` to load the first page.
+2. The view model sets its state to *loading* (the view shows a spinner) and asks the `FeedRepository` for page 1.
+3. `DefaultFeedRepository` asks `RemoteFeedService`, which builds a `GET /v1/posts?page=1&limit=10` request and sends it through `APIClient`.
+4. The response JSON is decoded into DTOs, converted into domain `Post`s, and saved to the cache by the repository.
+5. The view model receives the posts and sets its state to *loaded*. SwiftUI re-renders the feed automatically, because the view model is `@Observable`.
+
+If the network is down in step 3, the repository returns the cached posts instead, and the view model shows them with an offline banner. If there's no cache either, the error travels back up as `FeedError.offline` and the view shows the offline screen.
+
+### Dependency injection
+
+All objects are created in one place, `UmaApp`, which is called the *composition root*, and are passed down through initializers. No layer creates its own dependencies, and there are no singletons in the feature code. Because of this:
+
+- Tests swap in simple stubs (a fake repository, an in-memory cache) without any mocking framework.
+- Moving from the mock API to a real backend is a one-line change in `UmaApp`.
 
 ### Layer responsibilities
 
