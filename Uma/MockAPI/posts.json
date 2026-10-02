@@ -1,0 +1,632 @@
+[
+  {
+    "id": "post-1",
+    "author": {
+      "id": "user-1",
+      "name": "Amara Okafor",
+      "avatar_url": "https://i.pravatar.cc/150?img=10"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": "https://picsum.photos/seed/uma0/1080/1080",
+    "location": "Lagos, Nigeria",
+    "created_at": "2026-10-02T12:00:00Z",
+    "like_count": 23,
+    "comment_count": 4,
+    "is_liked": false
+  },
+  {
+    "id": "post-2",
+    "author": {
+      "id": "user-2",
+      "name": "Liam Chen",
+      "avatar_url": "https://i.pravatar.cc/150?img=11"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": "https://picsum.photos/seed/uma1/1080/1080",
+    "location": "London, United Kingdom",
+    "created_at": "2026-10-02T11:13:00Z",
+    "like_count": 160,
+    "comment_count": 35,
+    "is_liked": false
+  },
+  {
+    "id": "post-3",
+    "author": {
+      "id": "user-3",
+      "name": "Sofia Rossi",
+      "avatar_url": "https://i.pravatar.cc/150?img=12"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": "https://picsum.photos/seed/uma2/1080/1080",
+    "location": null,
+    "created_at": "2026-10-02T10:26:00Z",
+    "like_count": 297,
+    "comment_count": 66,
+    "is_liked": false
+  },
+  {
+    "id": "post-4",
+    "author": {
+      "id": "user-4",
+      "name": "Kwame Mensah",
+      "avatar_url": "https://i.pravatar.cc/150?img=13"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": "https://picsum.photos/seed/uma3/1080/1080",
+    "location": "Lisbon, Portugal",
+    "created_at": "2026-10-02T09:39:00Z",
+    "like_count": 434,
+    "comment_count": 97,
+    "is_liked": false
+  },
+  {
+    "id": "post-5",
+    "author": {
+      "id": "user-5",
+      "name": "Maya Patel",
+      "avatar_url": "https://i.pravatar.cc/150?img=14"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": null,
+    "location": "Nairobi, Kenya",
+    "created_at": "2026-10-02T08:52:00Z",
+    "like_count": 571,
+    "comment_count": 128,
+    "is_liked": false
+  },
+  {
+    "id": "post-6",
+    "author": {
+      "id": "user-6",
+      "name": "Noah Williams",
+      "avatar_url": "https://i.pravatar.cc/150?img=15"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": "https://picsum.photos/seed/uma5/1080/1080",
+    "location": "Tokyo, Japan",
+    "created_at": "2026-10-02T08:05:00Z",
+    "like_count": 708,
+    "comment_count": 159,
+    "is_liked": false
+  },
+  {
+    "id": "post-7",
+    "author": {
+      "id": "user-7",
+      "name": "Zara Ahmed",
+      "avatar_url": "https://i.pravatar.cc/150?img=16"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": "https://picsum.photos/seed/uma6/1080/1080",
+    "location": null,
+    "created_at": "2026-10-02T07:18:00Z",
+    "like_count": 845,
+    "comment_count": 190,
+    "is_liked": false
+  },
+  {
+    "id": "post-8",
+    "author": {
+      "id": "user-8",
+      "name": "Lucas Silva",
+      "avatar_url": "https://i.pravatar.cc/150?img=17"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": "https://picsum.photos/seed/uma7/1080/1080",
+    "location": "Cape Town, South Africa",
+    "created_at": "2026-10-02T06:31:00Z",
+    "like_count": 982,
+    "comment_count": 221,
+    "is_liked": false
+  },
+  {
+    "id": "post-9",
+    "author": {
+      "id": "user-1",
+      "name": "Amara Okafor",
+      "avatar_url": "https://i.pravatar.cc/150?img=10"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": "https://picsum.photos/seed/uma8/1080/1080",
+    "location": "Lagos, Nigeria",
+    "created_at": "2026-10-02T05:44:00Z",
+    "like_count": 1119,
+    "comment_count": 252,
+    "is_liked": false
+  },
+  {
+    "id": "post-10",
+    "author": {
+      "id": "user-2",
+      "name": "Liam Chen",
+      "avatar_url": "https://i.pravatar.cc/150?img=11"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": null,
+    "location": "London, United Kingdom",
+    "created_at": "2026-10-02T04:57:00Z",
+    "like_count": 1256,
+    "comment_count": 23,
+    "is_liked": false
+  },
+  {
+    "id": "post-11",
+    "author": {
+      "id": "user-3",
+      "name": "Sofia Rossi",
+      "avatar_url": "https://i.pravatar.cc/150?img=12"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": "https://picsum.photos/seed/uma10/1080/1080",
+    "location": null,
+    "created_at": "2026-10-02T04:10:00Z",
+    "like_count": 1393,
+    "comment_count": 54,
+    "is_liked": false
+  },
+  {
+    "id": "post-12",
+    "author": {
+      "id": "user-4",
+      "name": "Kwame Mensah",
+      "avatar_url": "https://i.pravatar.cc/150?img=13"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": "https://picsum.photos/seed/uma11/1080/1080",
+    "location": "Lisbon, Portugal",
+    "created_at": "2026-10-02T03:23:00Z",
+    "like_count": 1530,
+    "comment_count": 85,
+    "is_liked": false
+  },
+  {
+    "id": "post-13",
+    "author": {
+      "id": "user-5",
+      "name": "Maya Patel",
+      "avatar_url": "https://i.pravatar.cc/150?img=14"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": "https://picsum.photos/seed/uma12/1080/1080",
+    "location": "Nairobi, Kenya",
+    "created_at": "2026-10-02T02:36:00Z",
+    "like_count": 1667,
+    "comment_count": 116,
+    "is_liked": false
+  },
+  {
+    "id": "post-14",
+    "author": {
+      "id": "user-6",
+      "name": "Noah Williams",
+      "avatar_url": "https://i.pravatar.cc/150?img=15"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": "https://picsum.photos/seed/uma13/1080/1080",
+    "location": "Tokyo, Japan",
+    "created_at": "2026-10-02T01:49:00Z",
+    "like_count": 1804,
+    "comment_count": 147,
+    "is_liked": false
+  },
+  {
+    "id": "post-15",
+    "author": {
+      "id": "user-7",
+      "name": "Zara Ahmed",
+      "avatar_url": "https://i.pravatar.cc/150?img=16"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": null,
+    "location": null,
+    "created_at": "2026-10-02T01:02:00Z",
+    "like_count": 1941,
+    "comment_count": 178,
+    "is_liked": false
+  },
+  {
+    "id": "post-16",
+    "author": {
+      "id": "user-8",
+      "name": "Lucas Silva",
+      "avatar_url": "https://i.pravatar.cc/150?img=17"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": "https://picsum.photos/seed/uma15/1080/1080",
+    "location": "Cape Town, South Africa",
+    "created_at": "2026-10-02T00:15:00Z",
+    "like_count": 2078,
+    "comment_count": 209,
+    "is_liked": false
+  },
+  {
+    "id": "post-17",
+    "author": {
+      "id": "user-1",
+      "name": "Amara Okafor",
+      "avatar_url": "https://i.pravatar.cc/150?img=10"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": "https://picsum.photos/seed/uma16/1080/1080",
+    "location": "Lagos, Nigeria",
+    "created_at": "2026-10-01T23:28:00Z",
+    "like_count": 2215,
+    "comment_count": 240,
+    "is_liked": false
+  },
+  {
+    "id": "post-18",
+    "author": {
+      "id": "user-2",
+      "name": "Liam Chen",
+      "avatar_url": "https://i.pravatar.cc/150?img=11"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": "https://picsum.photos/seed/uma17/1080/1080",
+    "location": "London, United Kingdom",
+    "created_at": "2026-10-01T22:41:00Z",
+    "like_count": 2352,
+    "comment_count": 11,
+    "is_liked": false
+  },
+  {
+    "id": "post-19",
+    "author": {
+      "id": "user-3",
+      "name": "Sofia Rossi",
+      "avatar_url": "https://i.pravatar.cc/150?img=12"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": "https://picsum.photos/seed/uma18/1080/1080",
+    "location": null,
+    "created_at": "2026-10-01T21:54:00Z",
+    "like_count": 2489,
+    "comment_count": 42,
+    "is_liked": false
+  },
+  {
+    "id": "post-20",
+    "author": {
+      "id": "user-4",
+      "name": "Kwame Mensah",
+      "avatar_url": "https://i.pravatar.cc/150?img=13"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": null,
+    "location": "Lisbon, Portugal",
+    "created_at": "2026-10-01T21:07:00Z",
+    "like_count": 2626,
+    "comment_count": 73,
+    "is_liked": false
+  },
+  {
+    "id": "post-21",
+    "author": {
+      "id": "user-5",
+      "name": "Maya Patel",
+      "avatar_url": "https://i.pravatar.cc/150?img=14"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": "https://picsum.photos/seed/uma20/1080/1080",
+    "location": "Nairobi, Kenya",
+    "created_at": "2026-10-01T20:20:00Z",
+    "like_count": 2763,
+    "comment_count": 104,
+    "is_liked": false
+  },
+  {
+    "id": "post-22",
+    "author": {
+      "id": "user-6",
+      "name": "Noah Williams",
+      "avatar_url": "https://i.pravatar.cc/150?img=15"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": "https://picsum.photos/seed/uma21/1080/1080",
+    "location": "Tokyo, Japan",
+    "created_at": "2026-10-01T19:33:00Z",
+    "like_count": 2900,
+    "comment_count": 135,
+    "is_liked": false
+  },
+  {
+    "id": "post-23",
+    "author": {
+      "id": "user-7",
+      "name": "Zara Ahmed",
+      "avatar_url": "https://i.pravatar.cc/150?img=16"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": "https://picsum.photos/seed/uma22/1080/1080",
+    "location": null,
+    "created_at": "2026-10-01T18:46:00Z",
+    "like_count": 3037,
+    "comment_count": 166,
+    "is_liked": false
+  },
+  {
+    "id": "post-24",
+    "author": {
+      "id": "user-8",
+      "name": "Lucas Silva",
+      "avatar_url": "https://i.pravatar.cc/150?img=17"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": "https://picsum.photos/seed/uma23/1080/1080",
+    "location": "Cape Town, South Africa",
+    "created_at": "2026-10-01T17:59:00Z",
+    "like_count": 3174,
+    "comment_count": 197,
+    "is_liked": false
+  },
+  {
+    "id": "post-25",
+    "author": {
+      "id": "user-1",
+      "name": "Amara Okafor",
+      "avatar_url": "https://i.pravatar.cc/150?img=10"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": null,
+    "location": "Lagos, Nigeria",
+    "created_at": "2026-10-01T17:12:00Z",
+    "like_count": 3311,
+    "comment_count": 228,
+    "is_liked": false
+  },
+  {
+    "id": "post-26",
+    "author": {
+      "id": "user-2",
+      "name": "Liam Chen",
+      "avatar_url": "https://i.pravatar.cc/150?img=11"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": "https://picsum.photos/seed/uma25/1080/1080",
+    "location": "London, United Kingdom",
+    "created_at": "2026-10-01T16:25:00Z",
+    "like_count": 3448,
+    "comment_count": 259,
+    "is_liked": false
+  },
+  {
+    "id": "post-27",
+    "author": {
+      "id": "user-3",
+      "name": "Sofia Rossi",
+      "avatar_url": "https://i.pravatar.cc/150?img=12"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": "https://picsum.photos/seed/uma26/1080/1080",
+    "location": null,
+    "created_at": "2026-10-01T15:38:00Z",
+    "like_count": 3585,
+    "comment_count": 30,
+    "is_liked": false
+  },
+  {
+    "id": "post-28",
+    "author": {
+      "id": "user-4",
+      "name": "Kwame Mensah",
+      "avatar_url": "https://i.pravatar.cc/150?img=13"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": "https://picsum.photos/seed/uma27/1080/1080",
+    "location": "Lisbon, Portugal",
+    "created_at": "2026-10-01T14:51:00Z",
+    "like_count": 3722,
+    "comment_count": 61,
+    "is_liked": false
+  },
+  {
+    "id": "post-29",
+    "author": {
+      "id": "user-5",
+      "name": "Maya Patel",
+      "avatar_url": "https://i.pravatar.cc/150?img=14"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": "https://picsum.photos/seed/uma28/1080/1080",
+    "location": "Nairobi, Kenya",
+    "created_at": "2026-10-01T14:04:00Z",
+    "like_count": 3859,
+    "comment_count": 92,
+    "is_liked": false
+  },
+  {
+    "id": "post-30",
+    "author": {
+      "id": "user-6",
+      "name": "Noah Williams",
+      "avatar_url": "https://i.pravatar.cc/150?img=15"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": null,
+    "location": "Tokyo, Japan",
+    "created_at": "2026-10-01T13:17:00Z",
+    "like_count": 3996,
+    "comment_count": 123,
+    "is_liked": false
+  },
+  {
+    "id": "post-31",
+    "author": {
+      "id": "user-7",
+      "name": "Zara Ahmed",
+      "avatar_url": "https://i.pravatar.cc/150?img=16"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": "https://picsum.photos/seed/uma30/1080/1080",
+    "location": null,
+    "created_at": "2026-10-01T12:30:00Z",
+    "like_count": 4133,
+    "comment_count": 154,
+    "is_liked": false
+  },
+  {
+    "id": "post-32",
+    "author": {
+      "id": "user-8",
+      "name": "Lucas Silva",
+      "avatar_url": "https://i.pravatar.cc/150?img=17"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": "https://picsum.photos/seed/uma31/1080/1080",
+    "location": "Cape Town, South Africa",
+    "created_at": "2026-10-01T11:43:00Z",
+    "like_count": 4270,
+    "comment_count": 185,
+    "is_liked": false
+  },
+  {
+    "id": "post-33",
+    "author": {
+      "id": "user-1",
+      "name": "Amara Okafor",
+      "avatar_url": "https://i.pravatar.cc/150?img=10"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": "https://picsum.photos/seed/uma32/1080/1080",
+    "location": "Lagos, Nigeria",
+    "created_at": "2026-10-01T10:56:00Z",
+    "like_count": 4407,
+    "comment_count": 216,
+    "is_liked": false
+  },
+  {
+    "id": "post-34",
+    "author": {
+      "id": "user-2",
+      "name": "Liam Chen",
+      "avatar_url": "https://i.pravatar.cc/150?img=11"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": "https://picsum.photos/seed/uma33/1080/1080",
+    "location": "London, United Kingdom",
+    "created_at": "2026-10-01T10:09:00Z",
+    "like_count": 4544,
+    "comment_count": 247,
+    "is_liked": false
+  },
+  {
+    "id": "post-35",
+    "author": {
+      "id": "user-3",
+      "name": "Sofia Rossi",
+      "avatar_url": "https://i.pravatar.cc/150?img=12"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": null,
+    "location": null,
+    "created_at": "2026-10-01T09:22:00Z",
+    "like_count": 4681,
+    "comment_count": 18,
+    "is_liked": false
+  },
+  {
+    "id": "post-36",
+    "author": {
+      "id": "user-4",
+      "name": "Kwame Mensah",
+      "avatar_url": "https://i.pravatar.cc/150?img=13"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": "https://picsum.photos/seed/uma35/1080/1080",
+    "location": "Lisbon, Portugal",
+    "created_at": "2026-10-01T08:35:00Z",
+    "like_count": 18,
+    "comment_count": 49,
+    "is_liked": false
+  },
+  {
+    "id": "post-37",
+    "author": {
+      "id": "user-5",
+      "name": "Maya Patel",
+      "avatar_url": "https://i.pravatar.cc/150?img=14"
+    },
+    "text": "Golden hour never disappoints. 🌅",
+    "media_url": "https://picsum.photos/seed/uma36/1080/1080",
+    "location": "Nairobi, Kenya",
+    "created_at": "2026-10-01T07:48:00Z",
+    "like_count": 155,
+    "comment_count": 80,
+    "is_liked": false
+  },
+  {
+    "id": "post-38",
+    "author": {
+      "id": "user-6",
+      "name": "Noah Williams",
+      "avatar_url": "https://i.pravatar.cc/150?img=15"
+    },
+    "text": "Weekend plans: coffee, books and absolutely no alarms.",
+    "media_url": "https://picsum.photos/seed/uma37/1080/1080",
+    "location": "Tokyo, Japan",
+    "created_at": "2026-10-01T07:01:00Z",
+    "like_count": 292,
+    "comment_count": 111,
+    "is_liked": false
+  },
+  {
+    "id": "post-39",
+    "author": {
+      "id": "user-7",
+      "name": "Zara Ahmed",
+      "avatar_url": "https://i.pravatar.cc/150?img=16"
+    },
+    "text": "Finally shipped the project we've been working on for months! 🚀",
+    "media_url": "https://picsum.photos/seed/uma38/1080/1080",
+    "location": null,
+    "created_at": "2026-10-01T06:14:00Z",
+    "like_count": 429,
+    "comment_count": 142,
+    "is_liked": false
+  },
+  {
+    "id": "post-40",
+    "author": {
+      "id": "user-8",
+      "name": "Lucas Silva",
+      "avatar_url": "https://i.pravatar.cc/150?img=17"
+    },
+    "text": "Found this hidden gem on my walk today.",
+    "media_url": null,
+    "location": "Cape Town, South Africa",
+    "created_at": "2026-10-01T05:27:00Z",
+    "like_count": 566,
+    "comment_count": 173,
+    "is_liked": false
+  },
+  {
+    "id": "post-41",
+    "author": {
+      "id": "user-1",
+      "name": "Amara Okafor",
+      "avatar_url": "https://i.pravatar.cc/150?img=10"
+    },
+    "text": "Some days you just need to slow down and look around.",
+    "media_url": "https://picsum.photos/seed/uma40/1080/1080",
+    "location": "Lagos, Nigeria",
+    "created_at": "2026-10-01T04:40:00Z",
+    "like_count": 703,
+    "comment_count": 204,
+    "is_liked": false
+  },
+  {
+    "id": "post-42",
+    "author": {
+      "id": "user-2",
+      "name": "Liam Chen",
+      "avatar_url": "https://i.pravatar.cc/150?img=11"
+    },
+    "text": "New city, new stories. Where should I go next?",
+    "media_url": "https://picsum.photos/seed/uma41/1080/1080",
+    "location": "London, United Kingdom",
+    "created_at": "2026-10-01T03:53:00Z",
+    "like_count": 840,
+    "comment_count": 235,
+    "is_liked": false
+  }
+]
